@@ -34,5 +34,5 @@ I used flex to position the component to the middle and then went ahead to posit
 ## Author
 
 - Website - [Seth Addo](https://seths10.github.io/main-portfolio/)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/seths10)
+- Frontend Mentor - [@seths10](https://www.frontendmentor.io/profile/seths10)
 - Twitter - [@set_addo](https://www.twitter.com/set_addo)
