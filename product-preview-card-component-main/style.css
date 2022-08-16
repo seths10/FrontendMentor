@@ -107,6 +107,14 @@ main {
     color: var(--white);
 }
 
-@media screen and (max-width: 375px) {
+@media (max-width: 375px) {
+    main {
+        background: var(--background);
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
     
 }
