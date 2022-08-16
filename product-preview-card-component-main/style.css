@@ -1,10 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&display=swap');
 
-
-/* font-family: 'Montserrat', sans-serif; */
-/* font-family: 'Fraunces', serif; */
-
 :root {
     --green: hsl(158, 36%, 37%);
     --background: hsl(30, 38%, 92%);
@@ -19,3 +15,98 @@
     box-sizing: border-box;
 }
 
+main {
+    background: var(--background);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    display: flex;
+    width: 700px;
+    height: 500px;
+}
+
+.card .pic {
+    border-radius: 15px 0px 0px 15px;
+}
+
+.right {
+    background: var(--white);
+    padding: 30px;
+    border-radius: 0px 15px 15px 0px;
+}
+
+.category {
+    letter-spacing: 5px;
+    color: var(--normal-text);
+    margin-bottom: 30px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.title {
+    color: var(--deep-text);
+    margin-bottom: 30px;
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+}
+
+.desc {
+    color: var(--normal-text);
+    margin-bottom: 30px;
+    word-wrap: break-word;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.price {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.price .new-price {
+    color: var(--green);
+    font-family: 'Fraunces', serif;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.price .old-price {
+    margin-top: 10px;
+    text-decoration: line-through;
+    color: var(--normal-text);
+    font-family: 'Montserrat', sans-serif;
+    margin-right: 100px;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--green);
+    color: var(--white);
+    padding: 25px;
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 10px;
+    margin-right: 10px;
+    width: 95%;
+    height: 40px;
+}
+
+.btn img {
+    width: 20px;
+    height: 20px;
+    margin: 0 10px 0 0px;
+}
+
+.btn a {
+    text-decoration: none;
+    color: var(--white);
+}
+
+@media screen and (max-width: 375px) {
+    
+}
