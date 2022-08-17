@@ -17,7 +17,7 @@ I used flex to position the component to the middle and then went ahead to posit
 
 ### Screenshot
 
-![](./images/qr-code-comp.png)
+![Screenshot](./images/qr-code-comp.png)
 
 ### Links
 
