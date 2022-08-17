@@ -29,8 +29,16 @@ main {
     height: 500px;
 }
 
-.card .pic {
+/* .card .pic {
     border-radius: 15px 0px 0px 15px;
+} */
+
+.card .image-container {
+    background-image: url("images/image-product-desktop.jpg");
+    /* background-repeat: no-repeat; */
+    background-size: cover;
+    width: 100%;
+    border-radius: 10px 0 0 10px;
 }
 
 .right {
@@ -107,14 +115,32 @@ main {
     color: var(--white);
 }
 
-@media (max-width: 375px) {
-    main {
-        background: var(--background);
-        height: 100vh;
+@media(max-width: 620px) {
+    .card {
+        min-width: 340px;
+        min-height: 650px;
+        margin: 10%;
         display: flex;
-        align-items: center;
-        justify-content: center;
+        flex-direction: column;
+        justify-content: space-between;
     }
 
-    
+    .card .image-container {
+        max-width: 100%;
+        background-image: url("images/image-product-mobile.jpg");
+        background-size: cover;
+        height: 100%;
+        border-radius: 10px 10px 0 0;
+    }
+
+    .right {
+        max-width: 100%;
+        border-radius: 0 0 10px 10px;
+    }
+
+    .card-content {
+        margin: 24px;
+        display: flex;
+        justify-content: space-between;
+    }
 }
