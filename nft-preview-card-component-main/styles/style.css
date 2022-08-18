@@ -5,9 +5,10 @@
 :root {
     --softblue: hsl(215, 51%, 70%);
     --cyan: hsl(178, 100%, 50%);
-    --main-background: hsl(217, 54%, 11%);
-    --card-bg: hsl(216, 50%, 16%);
+    --main-background: hsl(216, 55%, 11%);
+    --card-bg: hsl(214, 50%, 16%);
     --grey: hsl(215, 32%, 27%);
+    --deep:hsl(217, 55%, 11%);
     --white: hsl(0, 0%, 100%);
 }
 
@@ -22,3 +23,155 @@ p {
     font-size: 18px;
 }
 
+main {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--main-background);
+}
+
+.card {
+    background: var(--card-bg);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 25px;
+    box-shadow: 0px 40px 0px 15px rgba(12,23,41,0.5);
+    width: 350px;
+    height: 600px;
+}
+
+.card .nft-logo {
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.icon-hover>img {
+    max-height: 100%;
+}
+
+.icon-view .icon-hover {
+    position: absolute;
+    left: 42.2%;
+    top: 25%;
+    width: 300px;
+    height: 300px;
+    display: none;
+    padding: 130px 130px;
+    border-radius: 10px;
+}
+
+.icon-view:hover .icon-hover {
+    display: block;
+    background-color: var(--cyan);
+    opacity: .75;
+    transition: opacity .5s ease-out;
+    -moz-transition: opacity .5s ease-out;
+    -webkit-transition: opacity .5s ease-out;
+    -o-transition: opacity .5s ease-out;
+}
+
+.card .heading {
+    color: var(--white);
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.card .heading:hover {
+    color: var(--cyan);
+}
+
+.card .sub-text {
+    color: var(--softblue);
+    font-weight: lighter;
+    margin-bottom: 20px;
+}
+
+.eth-days {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.eth {
+    display: flex;
+    align-items: center;
+    margin-left: 5px;
+}
+
+.days {
+    color: var(--softblue);
+    align-items: center;
+    display: flex;
+}
+
+.eth-days .days .clock {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+
+.eth-days .eth .ethereum {
+    width: 10px;
+    height: 15px;
+}
+
+.eth .amount {
+    color: var(--cyan);
+    margin-left: 5px;
+}
+
+.spacer {
+    border-bottom: 1px solid var(--grey);
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.author {
+    display: flex;
+    align-items: center;
+}
+
+.author .avatar {
+    width: 30px;
+    height: 30px;
+    border: 1px solid var(--white);
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.author p {
+    font-size: 16px;
+}
+
+.author .title {
+    color: var(--softblue);
+}
+
+.author .highlight {
+    color: white;
+    font-size: 16px;
+}
+
+.author .highlight:hover {
+    color: var(--cyan);
+}
+
+@media (max-width:375px) {
+    .icon-view .icon-hover {
+        position: absolute;
+        left: 10%;
+        top: 9%;
+        width: 300px;
+        height: 300px;
+        display: none;
+        padding: 130px 130px;
+        border-radius: 10px;
+    }
+}
