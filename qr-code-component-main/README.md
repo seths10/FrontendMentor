@@ -15,16 +15,16 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 
 I used flex to position the component to the middle and then went ahead to position the other parts (image and texts)
 
-### Screenshot
+## Screenshot
 
 ![Screenshot](./images/qr-code-comp.png)
 
-### Links
+## Links
 
 - Solution URL: [solution URL](https://github.com/seths10/FrontendMentor/tree/main/qr-code-component-main)
 - Live Site URL: [live site URL here](https://seths10.github.io/FrontendMentor/qr-code-component-main/)
 
-### Built with
+## Built with
 
 - Semantic HTML5 markup
 - CSS custom properties
